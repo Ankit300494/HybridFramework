@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Firefox Launched]]>
+    </line>
+    <line>
+      <![CDATA[Home Page logo is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Screenshot has been taken]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22419" started-at="2018-01-02T13:48:48Z" finished-at="2018-01-02T13:49:10Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="22419" started-at="2018-01-02T13:48:48Z" finished-at="2018-01-02T13:49:10Z">
+      <class name="com.framework.scripts.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.framework.scripts.LoginTest@5dfcfece]" name="setUp" is-config="true" duration-ms="12108" started-at="2018-01-02T19:18:48Z" finished-at="2018-01-02T19:19:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Firefox Launched]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="validLoginTest()[pri:0, instance:com.framework.scripts.LoginTest@5dfcfece]" name="validLoginTest" duration-ms="9777" started-at="2018-01-02T19:19:00Z" finished-at="2018-01-02T19:19:10Z">
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<actiTIME - [General Settings]> but was:<actiTIME - [Enter Time-Track]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: expected:<actiTIME - [General Settings]> but was:<actiTIME - [Enter Time-Track]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.framework.pageobjects.EnterTimeTrackPage.verifyHomePage(EnterTimeTrackPage.java:27)
+	at com.framework.scripts.LoginTest.validLoginTest(LoginTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+            <line>
+              <![CDATA[Home Page logo is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.framework.scripts.LoginTest@5dfcfece]" name="tearDown" is-config="true" duration-ms="515" started-at="2018-01-02T19:19:10Z" finished-at="2018-01-02T19:19:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLoginTest status=FAILURE method=LoginTest.validLoginTest()[pri:0, instance:com.framework.scripts.LoginTest@5dfcfece] output=Home Page logo is displayed]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Screenshot has been taken]]>
+            </line>
+            <line>
+              <![CDATA[Browser closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.framework.scripts.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
