@@ -14,6 +14,7 @@ public abstract class BasePage {
 	private WebElement logoutLink;
 	public BasePage(WebDriver driver)
 	{
+		System.out.println("pagefact...");
 		PageFactory.initElements(driver, this);
 		
 		
